@@ -1,1 +1,13 @@
-
+<div class="container-fluid">
+  <div class="row">
+    <form (ngSubmit)='submitQuote()' #quoteForm>
+      <div class="form-group">
+        <label for="name">Original Authors Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
+        <div [hidden]="name.valid || name.pristine" class="alert alert-warning">
+          <p>Please add original author's name</p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
