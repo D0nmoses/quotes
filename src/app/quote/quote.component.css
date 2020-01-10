@@ -1,0 +1,10 @@
+.btn {
+  padding: 4px;
+  margin: 4px;
+  border: none;
+  color: white;
+  width: 150px;
+  font-variant: small-caps;
+  font-size: 13px;
+  float: left;
+}
