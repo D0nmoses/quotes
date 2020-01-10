@@ -21,7 +21,7 @@
             </div>
             <div class="card-body" id="actualQuote">
               <p id="{{i}}" appHighlight>{{quote.description}}</p>
-              <button type="button" (click)='toggleQuote(i)' class="btn btn-primary">{{showDescription? "Hide": "Show"}} Quote Details</button>
+              <button type="button" (click)='toggleQuote(i)' class="btn btn-primary">{{quote.showDescription? "Hide": "Show"}} Quote Details</button>
             </div>
             <div class="card-footer" *ngIf="quote.showDescription">
               <!-- hides/shows votes, submitted by details-->
@@ -31,7 +31,7 @@
                   <!-- to show votes from vote app component + deleteQuote form dq details-->
                 </div>
                 <div class="col-6" id="small">
-                  <p>Submitted by {{quote.author}}, {{quote.completeDate|dateCount}} days ago</p>
+                  <p>Submitted by {{quote.author}}, {{quote.dateCreated|dateCount}} days ago</p>
                   <!--calls and displays date count pipe results-->
                 </div>
                 <div class="col-2">
