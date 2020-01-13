@@ -27,7 +27,7 @@
               <!-- hides/shows votes, submitted by details-->
               <div class="row">
                 <div class="col-4">
-                   <p><app-vote [quote]='quote'></app-vote></p>
+                   <p><app-vote [quote]='quote' (upVote)="addUpvote($event,i)" (downVote)="addDownvote($event,i)"></app-vote></p>
                   <!-- to show votes from vote app component + deleteQuote form dq details-->
                 </div>
                 <div class="col-6" id="small">

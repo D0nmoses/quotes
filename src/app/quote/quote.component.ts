@@ -32,6 +32,17 @@ export class QuoteComponent implements OnInit {
   toggleQuote(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
+  addUpvote(event,i){
+    if(event){
+      this.quotes[i].upVotes +=1;
+    }
+  }
+  addDownvote(event,i){
+    if(event){
+      this.quotes[i].downVotes +=1;
+    }
+  }
+
 
   constructor() { }
 

@@ -10,15 +10,16 @@ export class VoteComponent implements OnInit {
 
   @Input() quote:Quote;
 
-  @Output() isComplete = new EventEmitter<boolean>();
+  @Output() voteUp = new EventEmitter<boolean>();
 
+  @Output() voteDown = new EventEmitter<boolean>();
 
-  upVote(index){
-    this.quote[index].upVotes += 1;//adds one on mouse click
+  upVote(yes:boolean){
+    this.voteUp.emit(yes);
   }
 
-  downVote(index){
-    this.quote[index].downVotes += 1;//adds one on mouse click
+  downVote(yes:boolean){
+    this.voteDown.emit(yes);
   }
 
   constructor() { }
