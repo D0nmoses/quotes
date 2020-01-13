@@ -1,27 +1,13 @@
-# Quotes
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# Portfolio
+#### The website shows a brief portfolio submitted to Moringa School as part of week 1 assignments. It contains my name, an image associated with me, some of my github projects and a brief description about me, 22/11/2019.
+#### By **Don Moses**
+## Description
+The application is a website made using html and css. It contains details about the author in the form of a sample portfolio. These details include a menu bar for navigating the page sections, an image, the author's name, columns featuring previous projects on github with links embedded in the images and headings and an about me section containg some basic info about the author.  
+## Setup/Installation Requirements
+The only thing needed to view the webpage is a working browser such as chrome or firefox.
+## Known Bugs
+Currently there are no known bugs. Please reach out if any is found.
+## Technologies Used
+For development, the author used vscode to program in html and css. Chrome was also used for debugging.
+## Support and contact details
+In case of any problems, please email me at githinjidon@gmail.com

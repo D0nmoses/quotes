@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output, Input } from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -8,17 +8,17 @@ import { Quote } from '../quote';
 })
 export class VoteComponent implements OnInit {
 
+  @Input() quote:Quote;
+
   @Output() isComplete = new EventEmitter<boolean>();
 
-  uvotes = 0;
-  dvotes = 0;
 
-  upVote(){
-    this.uvotes = this.uvotes + 1;//adds one on mouse click
+  upVote(index){
+    this.quote[index].upVotes += 1;//adds one on mouse click
   }
 
-  downVote(){
-    this.dvotes = this.dvotes + 1;//adds one on mouse click
+  downVote(index){
+    this.quote[index].downVotes += 1;//adds one on mouse click
   }
 
   constructor() { }
