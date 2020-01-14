@@ -17,8 +17,8 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quotes.push(quote)
+    quote.completeDate = new Date(quote.completeDate);
+    this.quotes.push(quote);
   }
 
     deleteQuote(isComplete, index) {
@@ -32,16 +32,17 @@ export class QuoteComponent implements OnInit {
   toggleQuote(index){
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-  addUpvote(event,i){
+  addUpvote(event,index){
     if(event){
-      this.quotes[i].upVotes +=1;
+      this.quotes[index].upVotes +=1;
     }
   }
-  addDownvote(event,i){
+  addDownvote(event,index){
     if(event){
-      this.quotes[i].downVotes +=1;
+      this.quotes[index].downVotes +=1;
     }
   }
+  
 
 
   constructor() { }

@@ -14,12 +14,12 @@ export class VoteComponent implements OnInit {
 
   @Output() voteDown = new EventEmitter<boolean>();
 
-  upVote(yes:boolean){
-    this.voteUp.emit(yes);
+  upVote(){
+    this.voteUp.emit(true);
   }
 
-  downVote(yes:boolean){
-    this.voteDown.emit(yes);
+  downVote(){
+    this.voteDown.emit(true);
   }
 
   constructor() { }
